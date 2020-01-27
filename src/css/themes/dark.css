@@ -1,0 +1,21 @@
+.Controls-player.dark {
+  color: #eee;
+  background: #222;
+  box-shadow: 0 10px 15px rgba(51, 51, 51, 0.9);
+}
+
+.Controls-player.dark button {
+  color: #ccc;
+}
+
+@media (hover: hover) {
+  .EpisodeListElement.dark:hover {
+    background: #393939;
+  }
+
+  .EpisodeListElement-play.dark:hover {
+    background: #3498db;
+    border: 1px solid #3498db;
+    color: #fcfcfc;
+  }
+}
