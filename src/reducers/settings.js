@@ -1,6 +1,6 @@
 const initialState = {
   theme: localStorage.getItem('theme') || 'light',
-  display: localStorage.getItem('display') || 'category'
+  display: localStorage.getItem('display') || 'grid'
 }
 
 const themeReducer = (state = initialState, action) => {
