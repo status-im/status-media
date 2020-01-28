@@ -9,7 +9,7 @@ The Podcast broadcasting website for the Status community
 1. Clone the repo
 
 ```sh
-git clone https://github.com/nikkilr88/react-podcasts.git
+git clone https://github.com/jinhojang6/status-podcast.git
 ```
 
 2. Install dependencies
