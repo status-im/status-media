@@ -24,3 +24,9 @@ yarn install
 ```sh
 yarn run dev
 ```
+
+2. Build
+
+```sh
+yarn run build
+```
