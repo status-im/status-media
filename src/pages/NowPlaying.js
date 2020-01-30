@@ -15,13 +15,11 @@ class NowPlaying extends Component {
     const { playStatus, loading } = this.props.player
     const { img, title, podcast } = this.props.player.track
     const podcastLoading = playStatus === 'PLAYING' && loading
-
     let podcastImage = ''
 
     if (title) {
       podcastImage = podcasts
         .filter(p => p.name === podcast)[0]
-        .img.replace(/100x100/g, '30x30')
     }
 
     return (
