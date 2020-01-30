@@ -3,6 +3,7 @@
 The Podcast broadcasting website for the Status community
 ---
 
+Support RSS to play podcasts
 
 ### Installation
 
