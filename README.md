@@ -3,7 +3,9 @@
 The Podcast broadcasting website for the Status community
 ---
 
-Support RSS to play podcasts
+Support RSS to play Status community podcasts
+
+Demo website: http://jinhojang.s3-website.ap-northeast-2.amazonaws.com/
 
 ### Installation
 
