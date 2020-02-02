@@ -25,6 +25,8 @@ yarn install
 
 ```sh
 yarn run dev
+
+#visit http://localhost:1234/
 ```
 
 2. Build
