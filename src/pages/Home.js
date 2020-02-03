@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import ProgressiveImage from 'react-progressive-image'
@@ -9,7 +9,7 @@ import '../css/HomePage.styles.css'
 
 class HomePage extends Component {
   displayGrid = () => {
-    return podcasts.map(podcast => (
+    const gridPodcasts = podcasts.map(podcast => (
       <Link
         key={podcast.name}
         className="Home-podcast"
@@ -34,6 +34,11 @@ class HomePage extends Component {
         </div>
       </Link>
     ))
+    return (
+      <Fragment>
+        {gridPodcasts}
+      </Fragment>
+    )
   }
 
   sortByCategory = () => {
@@ -81,7 +86,7 @@ class HomePage extends Component {
     return (
       <div className={`Home ${theme}`}>
         <div className="Home-banner">
-          <h1>Podcasts</h1>
+          <h1>Status Podcasts</h1>
           <div>
             <i
               className={`fas fa-list icon ${
