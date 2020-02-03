@@ -25,8 +25,11 @@ class HomePage extends Component {
 
           <h3 className="Home-podcast-title">
             {podcast.name.length > 20
-              ? podcast.name.substring(0, 13) + '...'
+              ? podcast.name.substring(0, 20) + '...'
               : podcast.name}
+          </h3>
+          <h3 className="Home-podcast-creator">
+                {podcast.creator}
           </h3>
         </div>
       </Link>
@@ -52,9 +55,12 @@ class HomePage extends Component {
               </ProgressiveImage>
 
               <h3 className="Home-podcast-title">
-                {podcast.name.length > 13
-                  ? podcast.name.substring(0, 13) + '...'
+                {podcast.name.length > 20
+                  ? podcast.name.substring(0, 20) + '...'
                   : podcast.name}
+              </h3>
+              <h3 className="Home-podcast-creator">
+                {podcast.creator}
               </h3>
             </div>
           </Link>

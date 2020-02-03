@@ -62,7 +62,15 @@
 }
 
 .Home-podcast-title {
+  margin-top: 5px;
   font-weight: normal;
+  color: rgb(105, 105, 105);
+  text-align: center;
+}
+
+.Home-podcast-creator {
+  font-weight: normal;
+  margin-top: 5px;
   color: #999;
   text-align: center;
 }
@@ -70,14 +78,14 @@
 .Home-podcasts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 80px;
 }
 
 .grid {
   display: grid;
   margin-left: 30px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 60px;
+  grid-gap: 80px;
   margin-bottom: 100px;
 }
 

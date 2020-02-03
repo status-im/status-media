@@ -14,14 +14,17 @@
 
 .markdown h1 {
     margin: 2rem 0;
+    line-height: 140%;
 }
 
 .markdown h2 {
     margin: 2rem 0;
+    line-height: 140%;
 }
 
 .markdown p {
     margin: 2rem 0;
+    line-height: 180%;
 }
 
 .markdown pre {
