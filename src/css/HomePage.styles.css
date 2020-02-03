@@ -4,7 +4,7 @@
 
 .Home-banner {
   border-radius: 10px;
-  margin: 0 0 25px;
+  margin: 0 0 50px;
   text-align: left;
   color: #555;
   display: flex;
@@ -64,7 +64,7 @@
 .Home-podcast-title {
   font-weight: normal;
   color: #999;
-  text-align: left;
+  text-align: center;
 }
 
 .Home-podcasts {
@@ -75,8 +75,9 @@
 
 .grid {
   display: grid;
+  margin-left: 30px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 60px;
   margin-bottom: 100px;
 }
 
@@ -113,7 +114,7 @@
 
 @media only screen and (max-width: 600px) {
   .grid {
-    grid-gap: 10px;
+    margin-left: 0px;
   }
 
   .Home-banner h1 {
@@ -132,6 +133,7 @@
 
   .Home-podcast-title {
     margin-left: 5px;
+    text-align: center;
   }
 
   ::-webkit-scrollbar {
