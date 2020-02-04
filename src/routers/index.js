@@ -10,6 +10,7 @@ import BackButton from '../components/BackButton.component'
 
 // Pages
 import HomePage from '../pages/Home'
+import Featured from '../pages/Featured'
 import NotFound from '../pages/NotFound'
 import SettingsPage from '../pages/Settings'
 import PodcastPage from '../pages/PodcastPage'
@@ -29,6 +30,7 @@ const AppRouter = ({ theme }) => (
         <Controls />
         <Switch>
           <Route path='/' exact component={HomePage} />
+          <Route path='/featured' exact component={Featured} />
           <Route path='/settings' exact component={SettingsPage} />
           <Route path='/nowplaying' exact component={NowPlayingPage} />
           <Route path='/townhall' exact component={Townhall} />

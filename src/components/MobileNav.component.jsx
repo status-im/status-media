@@ -8,6 +8,7 @@ class MobileNav extends Component {
   render() {
     const location = {
       '/': 'Home',
+      '/featured': 'Featured on',
       '/nowplaying': 'Now Playing',
       '/townhall': 'Town hall',
       '/settings': 'Settings'

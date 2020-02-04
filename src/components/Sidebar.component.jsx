@@ -34,7 +34,13 @@ class Sidebar extends Component {
             <li className='sidebar-link'>
               <Link to='/' activeClassName='sidebar-active' exact>
                 <i className='fas fa-podcast' style={{ marginRight: '30px' }}/>
-                <h4>Podcasts</h4>
+                <h4>Status Podcasts</h4>
+              </Link>
+            </li>
+            <li className='sidebar-link'>
+              <Link to='/featured' activeClassName='sidebar-active' exact>
+                <i className='fas fa-bullhorn' style={{ marginRight: '30px' }}/>
+                <h4>Featured on</h4>
               </Link>
             </li>
             <li className='sidebar-link'>

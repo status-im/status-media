@@ -7,11 +7,11 @@ import { switchDisplay } from '../actions/settings'
 
 import '../css/HomePage.styles.css'
 
-class HomePage extends Component {
+class Featured extends Component {
   displayGrid = () => {
     const list = []
     podcasts.map((podcast) => {
-      if (podcast.category === 'status') {
+      if (podcast.category === 'featured') {
         list.push(podcast)
       }
     })
@@ -94,25 +94,9 @@ class HomePage extends Component {
     return (
       <div className={`Home ${theme}`}>
         <div className="Home-banner">
-          <h1 className="home-title">The Status Network Podcasts</h1>
-          <div>
-            <i
-              className={`fas fa-list icon ${
-                display === 'category' ? 'active' : ''
-              }`}
-              onClick={() => switchDisplay('category')}
-            />
-            <i
-              className={`fas fa-th icon ${display === 'grid' ? 'active' : ''}`}
-              onClick={() => switchDisplay('grid')}
-            />
-          </div>
+          <h1 className="home-title">Status featured on</h1>
         </div>
-        {display === 'grid' ? (
-          <div className="grid">{this.displayGrid()}</div>
-        ) : (
-          this.sortByCategory()
-        )}
+        <div className="grid">{this.displayGrid()}</div>
       </div>
     )
   }
@@ -126,4 +110,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { switchDisplay }
-)(HomePage)
+)(Featured)

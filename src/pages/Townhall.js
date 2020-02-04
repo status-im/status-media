@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
+import { TownhallSection } from "./TownhallSection";
+import 'antd/lib/button/style/index.css';
+import 'antd/lib/menu/style/index.css';
+import 'antd/lib/dropdown/style/index.css';
+import 'antd/lib/icon/style/index.css';
+import 'antd/lib/table/style/index.css';
+import 'antd/lib/tag/style/index.css';
+import 'antd/lib/input/style/index.css';
+
 
 class Townhall extends Component {
   render() {
     return (
-      <div className='middle'>
-        <h1>Coming soon!</h1>
+      <div>
+         <TownhallSection />
       </div>
     )
   }
