@@ -37,7 +37,17 @@ export const podcasts = [
   },
   ...
 \`\`\`
+
+* Known issues
+
+The podcast player doesn't work on iOS at the moment. You will find that the player stops the audio intermittently.
+
+If you use an iPhone, please use iPhone's podcast feature above the notification center instead after playing a podcast.
+
+<br/>
+<br/>
 `
+
 
 class Upload extends Component {
   render() {
