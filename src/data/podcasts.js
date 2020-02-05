@@ -16,6 +16,14 @@ export const podcasts = [
       'https://lh3.googleusercontent.com/W5mQLucviakmoHAFldUZbtFkTHw91vbcQk0w8o3woHEm9c4lpaMqi4cmY6bl3HmTSTnCxL5dvwwbDQa0eVGHrT16dhjEQmoAvg1Mk1Gjy-i3QtJjFRk1o5RxaWQ0BDfVn3oTntFF=w2400'
   },
   {
+    category: 'status',
+    name: 'Status Korean Podcast',
+    creator: 'Jinho Jang',
+    link: 'http://feeds.soundcloud.com/users/soundcloud:users:772478986/sounds.rss',
+    img:
+      'https://lh3.googleusercontent.com/D5bCVgLCmW4s1CRTZsZaK5ad7sCHdMxo7VrVBbbPNgGIN8djhXunatFxwvsY5_RM_h4IroxbzroUlLbZDMNGXWN3TOo5Y6g18cS0Q2IN7r_4TSRrfxOpvtAzLSTDgrBeNCTEpAX32w=w2400'
+  },
+  {
     category: 'featured',
     name: 'The Bitcoin Podcast',
     creator: 'Corey & Demetrick',

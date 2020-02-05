@@ -1,5 +1,6 @@
 .sidebar {
   position: sticky;
+  width: 240px;
   left: 0;
   top: 0;
   height: 100vh;

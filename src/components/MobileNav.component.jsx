@@ -10,7 +10,7 @@ class MobileNav extends Component {
       '/': 'Home',
       '/featured': 'Featured on',
       '/nowplaying': 'Now Playing',
-      '/townhall': 'Town hall',
+      '/featured': 'Featured on',
       '/settings': 'Settings'
     }
 
@@ -39,16 +39,16 @@ class MobileNav extends Component {
 
         <nav className={`MobileNav ${theme}`}>
           <Link to='/' exact activeClassName='active-nav-item'>
-            <i className='fas fa-home MobileNav-icon' />
+            <i className='fas fa-podcast MobileNav-icon' />
+          </Link>
+          <Link to='/featured' activeClassName='active-nav-item'>
+            <i className='fas fa-bullhorn MobileNav-icon' />
           </Link>
           <Link to='/nowplaying' activeClassName='active-nav-item'>
             <i className='fas fa-headphones-alt MobileNav-icon' />
           </Link>
           <Link to='/townhall' activeClassName='active-nav-item'>
             <i className='fas fa-users MobileNav-icon' />
-          </Link>
-          <Link to='/upload' activeClassName='active-nav-item'>
-            <i className='fas fa-upload MobileNav-icon' />
           </Link>
           <Link to='/settings' activeClassName='active-nav-item'>
             <i className='fas fa-cog MobileNav-icon' />
