@@ -38,5 +38,13 @@ export const podcasts = [
     link: 'https://feeds.simplecast.com/lKmQDG9R',
     img:
       'https://lh3.googleusercontent.com/cwsJClMXMYPuo17tQmeZDYhXI7ZKQta4AUGJ0mKrFaPBpRFssVpxLvzE-eScQ8vdBkTvcB9B5oF_tyY_gQAix-7muSwBfPrj1x5Pfa4r-6TCXJqxg6l8beQ9GVGjlDquy0I_oYlGKg=w2400'
-  }
+  },
+  {
+    category: 'featured',
+    name: 'Aibeats',
+    creator: 'Lilsiri.eth Ξ',
+    link: 'http://feeds.soundcloud.com/users/soundcloud:users:560409111/sounds.rss',
+    img:
+      'https://lh3.googleusercontent.com/NJ_OW1D8tM5Ivm87Vci9WX7hCfdKgoHMQKlq8Zr-g-ZHfwQ5O_O6S7iHV-qHVWuEBNyotU63nvxF32agEK10dgpzePeXsRI4IIdYvt2SiRABwsUZVw35delHGckGXVIbjGQ--7tTqA=w2400'
+  },
 ]
