@@ -34,48 +34,23 @@ class NowPlaying extends Component {
             </i>
 
             <div className='NowPlaying-img-wrapper'>
-              {podcastLoading && <Loader />}
               <ProgressiveImage src={img} placeholder={podcastImage}>
                 {src => (
                   <img
                     src={src}
                     alt='podcast image'
-                    className={podcastLoading ? 'blur' : undefined}
                   />
                 )}
               </ProgressiveImage>
             </div>
 
             <div className='NowPlaying-info'>
-              <ProgressBar width='75%' wrapperPosition='relative' />
               <Link to={`/podcast/${podcast.replace(/ /g, '_')}`}>
                 <h4>{podcast}</h4>
               </Link>
-              <h3>{title}</h3>
             </div>
 
-            <div className='NowPlaying-controls'>
-              <i
-                className='material-icons'
-                onClick={() => this.props.skip(-5000)}
-              >
-                replay_5
-              </i>
-              <i
-                onClick={this.props.pauseAudio}
-                className='material-icons play-btn'
-              >
-                {playStatus === Sound.status.PAUSED
-                  ? 'play_circle_outline'
-                  : 'pause_circle_outline'}
-              </i>
-              <i
-                className='material-icons'
-                onClick={() => this.props.skip(10000)}
-              >
-                forward_10
-              </i>
-            </div>
+
           </div>
         ) : (
           <p className='middle'>

@@ -1,10 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import Volume from './Volume.component'
-import Sound from 'react-sound'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import ProgressBar from './ProgressBar.component'
-import SoundWrapper from './SoundWrapper.component'
+import { withRouter } from 'react-router-dom';
 import { convertSeconds } from '../utils'
 import {
   skip,
@@ -14,10 +10,15 @@ import {
   showVolume,
   hideVolume
 } from '../actions/player'
+import AudioPlayer from 'react-h5-audio-player';
 
+import 'react-h5-audio-player/lib/styles.css';
 import '../css/Controls.styles.css'
 
 class Controls extends Component {
+
+  state = { showing: true };
+
   // Pause, skip forward / back
   keyboardShortcuts = e => {
     switch (e.which) {
@@ -105,6 +106,14 @@ class Controls extends Component {
   componentDidMount() {
     // Set media session for mobile notifications/lockscreen display
     this.setMediaSession()
+    const { pathname } = this.props.location;
+    console.log(pathname)
+    console.log(screen.width)
+
+    // if (pathname !== '/nowplaying') {
+    //   this.setState({ showing: false });
+    //   console.log(this.state.showing)
+    // }
 
     // Keyboard controls
     document.addEventListener('keyup', this.handleOnKeyUp, false)
@@ -139,60 +148,21 @@ class Controls extends Component {
       volumeVisible
     } = this.props
 
-    const podcastLink = `/podcast/${podcast.replace(/ /gi, '_')}`
+    console.log(track)
 
-    return track.title.length > 0 ? (
-      <Fragment>
-        <SoundWrapper />
-
-        {volumeVisible && <Volume theme={theme} />}
-
-        <div className={`Controls-player ${theme}`}>
-          <ProgressBar wrapperPosition='absolute' />
-
-          <Link to={podcastLink}>
-            <img className='Controls-img' src={image} alt='podcast cover' />
-          </Link>
-
-          <div className='Controls-title'>
-            <h6 className='Controls-title-podcast'>
-              <Link to={podcastLink}>{podcast}</Link>
-            </h6>
-            <h5 className='Controls-title-track'>
-              {' '}
-              {track.title.length > 50
-                ? track.title.substring(0, 50) + '...'
+    return (
+      <div style={{visibility: this.state.showing ? 'visible' : 'hidden' }}>
+        <div className="title">
+        {track.title.length > 35
+                ? track.title.substring(0, 35) + '...'
                 : track.title}
-            </h5>
-          </div>
-
-          <div className='Controls-btns'>
-            <span className='time'>{time}</span>
-            <button onClick={() => skip(-5000)}>
-              <i className='material-icons'>replay_5</i>
-            </button>
-
-            <button onClick={pauseAudio}>
-              {playStatus == Sound.status.PLAYING ? (
-                <i className='material-icons paused'>pause</i>
-              ) : (
-                <i className='material-icons'>play_arrow</i>
-              )}
-            </button>
-
-            <button onClick={stopAudio}>
-              <i className='material-icons'>stop</i>
-            </button>
-
-            <button onClick={() => skip(10000)}>
-              <i className='material-icons'>forward_10</i>
-            </button>
-          </div>
         </div>
-      </Fragment>
-    ) : (
-      ''
+        <AudioPlayer
+          src={track.src}
+        />
+      </div>
     )
+
   }
 }
 
@@ -206,7 +176,7 @@ const mapStateToProps = state => ({
   time: convertSeconds(state.player.position / 1000)
 })
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   { pauseAudio, stopAudio, skip, showVolume, hideVolume, setVolume }
-)(Controls)
+)(Controls))

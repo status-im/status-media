@@ -65,7 +65,62 @@
   color: #888;
 }
 
+.rhap_container {
+  position: fixed;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  z-index: 999;
+  padding-right: 260px;
+  background-color: #2b2b2b;
+}
+
+.rhap_time {
+  color: white;
+}
+
+.title {
+  position: fixed;
+  bottom: 90px;
+  padding: 5px;
+  background-color: #6d6d6d;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  left: 240px;
+  right: 0;
+  z-index: 999;  
+}
+
+*:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 600px) {
+
+  .rhap_container {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-right: 20px;
+    background-color: #2b2b2b;
+  }
+
+  .title {
+    position: fixed;
+    bottom: 150px;
+    padding: 5px;
+    background-color: #6d6d6d;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    left: 0px;
+    right: 0;
+    z-index: 999;  
+  }
+
   .Controls-player {
     display: none;
   }
