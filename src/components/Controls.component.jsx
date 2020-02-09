@@ -17,8 +17,6 @@ import '../css/Controls.styles.css'
 
 class Controls extends Component {
 
-  state = { showing: true };
-
   // Pause, skip forward / back
   keyboardShortcuts = e => {
     switch (e.which) {
@@ -106,14 +104,6 @@ class Controls extends Component {
   componentDidMount() {
     // Set media session for mobile notifications/lockscreen display
     this.setMediaSession()
-    const { pathname } = this.props.location;
-    console.log(pathname)
-    console.log(screen.width)
-
-    // if (pathname !== '/nowplaying') {
-    //   this.setState({ showing: false });
-    //   console.log(this.state.showing)
-    // }
 
     // Keyboard controls
     document.addEventListener('keyup', this.handleOnKeyUp, false)
@@ -123,6 +113,7 @@ class Controls extends Component {
   }
 
   componentWillUnmount() {
+    
     document.removeEventListener('keyup', this.handleOnKeyUp, false)
     document.removeEventListener('keydown', this.handleOnKeyDown, false)
   }
@@ -147,11 +138,10 @@ class Controls extends Component {
       playStatus,
       volumeVisible
     } = this.props
-
-    console.log(track)
+    const { pathname } = this.props.location;
 
     return (
-      <div style={{visibility: this.state.showing ? 'visible' : 'hidden' }}>
+      <div style={{visibility: screen.width > 600 ? 'visible' : pathname === '/nowplaying' ? 'visible' : 'hidden' }}>
         <div className="title">
         {track.title.length > 35
                 ? track.title.substring(0, 35) + '...'
