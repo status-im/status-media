@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { connect } from 'react-redux'
 import styles from "./style.module.css";
 import { TownhallTable } from "../TownhallTable";
 import { TitleSearch } from "../TitleSearch";
@@ -105,10 +105,11 @@ class TownhallSection extends Component {
   };
 
   render() {
+    const { theme } = this.props;
     return (
       <section className={styles.container}>
         <header className={styles.header}>
-          <h1 className="townhall-title">Status Town Hall Meetings</h1>
+          <h1 className={`townhall-title ${theme}`}>Status Town Hall Meetings</h1>
           <TitleSearch onSearch={this.handleSearch} className="townhall-title-search" />
           </header>
           <TownhallTable townhallData={this.state.townhallData} />
@@ -117,4 +118,10 @@ class TownhallSection extends Component {
   }
 }
 
-export { TownhallSection };
+const mapStateToProps = state => ({
+  theme: state.settings.theme
+})
+
+export default connect(
+  mapStateToProps,
+)( TownhallSection )

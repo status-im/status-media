@@ -18,6 +18,19 @@
  margin: 20px;
 }
 
+.townhall-title.light {
+  color: #555;
+ }
+
+ .townhall-title.dark {
+  color: #999;
+ }
+
+ .townhall-title.black {
+  color: #999;
+ }
+
+
 .townhall-title-search {
   margin-bottom: 20px;
 }

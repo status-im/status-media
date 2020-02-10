@@ -33,7 +33,7 @@ export const podcasts = [
     name: 'Everything Status',
     link: 'http://feeds.soundcloud.com/users/soundcloud:users:741837922/sounds.rss',
     img:
-      'https://lh3.googleusercontent.com/W5mQLucviakmoHAFldUZbtFkTHw91vbcQk0w8o3woHEm9c4lpaMqi4cmY6bl3HmTSTnCxL5dvwwbDQa0eVGHrT16dhjEQmoAvg1Mk1Gjy-i3QtJjFRk1o5RxaWQ0BDfVn3oTntFF=w2400'
+      '{img URL}'
   },
   ...
 \`\`\`
