@@ -38,10 +38,15 @@ export const podcasts = [
   ...
 \`\`\`
 
-* Known issues
+<br/>
 
-RSS parsing is very slow or doesn't work sometimes. We are going to add hard-coded RSS xmil files to fix this problem.
+## Known issues
 
+Found an issue with playing HTML5 audio in the background on iOS
+
+
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
