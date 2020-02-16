@@ -45,9 +45,7 @@ class NowPlaying extends Component {
             </div>
 
             <div className='NowPlaying-info'>
-              <Link to={`/podcast/${podcast.replace(/ /g, '_')}`}>
                 <h4>{podcast}</h4>
-              </Link>
             </div>
 
 
