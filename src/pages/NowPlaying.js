@@ -47,7 +47,8 @@ class NowPlaying extends Component {
             <div className='NowPlaying-info'>
                 <h4>{podcast}</h4>
             </div>
-
+            <br/>
+            <br/>
 
           </div>
         ) : (

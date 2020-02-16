@@ -22,12 +22,12 @@
 
 .NowPlaying-player img {
   width: 140px;
-  margin-top: 60px;
+  margin-top: 40px;
   transition: all 0.1s;
 }
 
 .NowPlaying-info {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
 }
 
