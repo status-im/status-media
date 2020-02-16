@@ -1,10 +1,19 @@
-import axios from 'axios'
+import "@babel/polyfill";
 
 export const setLoading = () => dispatch => {
   dispatch({
     type: 'SET_LOADING'
   })
 }
+
+let Parser = require('rss-parser');
+let parser = new Parser({
+  customFields: {
+    feed: ['description', 'description'],
+  }
+});
+
+const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
 export const fetchPodcast = url => dispatch => {
   dispatch({
@@ -15,20 +24,14 @@ export const fetchPodcast = url => dispatch => {
     }
   })
   // Make GET request to Node service to parse RSS feed and send back JSON
-  axios({
-    method: 'GET',
-    timeout: 25 * 1000,
-    url: `https://podcast-parse.glitch.me/?url=${url}`
-  })
-    .then(res => {
-      const channel = res.data.data
-
-      const title = channel.title
-      const website = channel.link
-      const author = channel.author
-      const episodes = channel.episodes
-      const description = channel.description.short || channel.description.long
-      const img = channel.image.replace(/http:\/\//, 'https://')
+  parser.parseURL(CORS_PROXY + url, function(err, feed) {
+    if (feed) {
+      const title = feed.title
+      const website = feed.link
+      const author = feed.itunes.author
+      const episodes = feed.items
+      const description = feed.description
+      const img = feed.image
 
       dispatch({
         type: 'FETCH_PODCAST',
@@ -42,16 +45,17 @@ export const fetchPodcast = url => dispatch => {
           description
         }
       })
-    })
-    .catch(err => {
+    }
+    else {
       let errorMsg =
-        err.code == 'ECONNABORTED'
-          ? 'Oh-oh, this is taking longer that usual...'
-          : 'Oh-oh, something went wrong ...'
+      err.code == 'ECONNABORTED'
+        ? 'Oh-oh, this is taking longer that usual...'
+        : 'Oh-oh, something went wrong ...'
 
       dispatch({
         type: 'SET_ERROR',
         error: errorMsg
-      })
+      })    
+    }
     })
 }
