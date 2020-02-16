@@ -10,6 +10,7 @@ const TownhallTable = ({ townhallData }) => {
   const tableColumns = [
     {
       title: "ID",
+      width: '10%',
       dataIndex: "key",
       key: "id",
       sorter: (a, b) => a.key - b.key,
@@ -17,6 +18,7 @@ const TownhallTable = ({ townhallData }) => {
     },
     {
       title: "Title",
+      width: '30%',
       dataIndex: "title",
       key: "title"
     },
