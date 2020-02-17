@@ -11,7 +11,7 @@ export const podcasts = [
     category: 'status',
     name: 'Everything Status',
     creator: 'Henry Dada',
-    link: 'https://feeds.soundcloud.com/users/soundcloud:users:741837922/sounds.rss',
+    link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:741837922/sounds.rss',
     img:
       'https://lh3.googleusercontent.com/W5mQLucviakmoHAFldUZbtFkTHw91vbcQk0w8o3woHEm9c4lpaMqi4cmY6bl3HmTSTnCxL5dvwwbDQa0eVGHrT16dhjEQmoAvg1Mk1Gjy-i3QtJjFRk1o5RxaWQ0BDfVn3oTntFF=w2400'
   },
@@ -19,7 +19,7 @@ export const podcasts = [
     category: 'status',
     name: 'Status Korean Podcast',
     creator: 'Jinho Jang',
-    link: 'https://feeds.soundcloud.com/users/soundcloud:users:772478986/sounds.rss',
+    link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:772478986/sounds.rss',
     img:
       'https://lh3.googleusercontent.com/D5bCVgLCmW4s1CRTZsZaK5ad7sCHdMxo7VrVBbbPNgGIN8djhXunatFxwvsY5_RM_h4IroxbzroUlLbZDMNGXWN3TOo5Y6g18cS0Q2IN7r_4TSRrfxOpvtAzLSTDgrBeNCTEpAX32w=w2400'
   },
@@ -43,7 +43,7 @@ export const podcasts = [
     category: 'featured',
     name: 'Aibeats',
     creator: 'Lilsiri.eth Ξ',
-    link: 'https://feeds.soundcloud.com/users/soundcloud:users:560409111/sounds.rss',
+    link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:560409111/sounds.rss',
     img:
       'https://lh3.googleusercontent.com/NJ_OW1D8tM5Ivm87Vci9WX7hCfdKgoHMQKlq8Zr-g-ZHfwQ5O_O6S7iHV-qHVWuEBNyotU63nvxF32agEK10dgpzePeXsRI4IIdYvt2SiRABwsUZVw35delHGckGXVIbjGQ--7tTqA=w2400'
   },

@@ -13,7 +13,7 @@ let parser = new Parser({
   }
 });
 
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+// const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
 export const fetchPodcast = url => dispatch => {
   dispatch({
@@ -24,7 +24,7 @@ export const fetchPodcast = url => dispatch => {
     }
   })
   // Make GET request to Node service to parse RSS feed and send back JSON
-  parser.parseURL(CORS_PROXY + url, function(err, feed) {
+  parser.parseURL(url, function(err, feed) {
     if (feed) {
       const title = feed.title
       const website = feed.link
