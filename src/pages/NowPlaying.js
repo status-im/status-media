@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-import Sound from 'react-sound'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { podcasts } from '../data/podcasts'
-import Loader from '../components/Loader.component'
 import ProgressiveImage from 'react-progressive-image'
-import ProgressBar from '../components/ProgressBar.component'
 import { pauseAudio, skip, stopAudio } from '../actions/player'
 
 import '../css/NowPlaying.styles.css'

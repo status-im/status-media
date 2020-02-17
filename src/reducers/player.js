@@ -1,5 +1,3 @@
-import Sound from 'react-sound'
-
 const loadState = () => {
   try {
     const serializedState = localStorage.getItem('playerState')
@@ -25,7 +23,6 @@ const playerState = loadState() || {
   duration: 0,
   loading: true,
   showVolume: false,
-  playStatus: Sound.status.PLAYING
 }
 
 const playerReducer = (state = playerState, action) => {
@@ -42,7 +39,6 @@ const playerReducer = (state = playerState, action) => {
         },
         position: 0,
         loading: true,
-        playStatus: Sound.status.PLAYING
       }
 
     case 'STOP_AUDIO':
@@ -81,7 +77,6 @@ const playerReducer = (state = playerState, action) => {
       return {
         ...state,
         position: 1,
-        playStatus: Sound.status.PAUSED
       }
 
     case 'SKIP':

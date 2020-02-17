@@ -1,5 +1,3 @@
-import Sound from 'react-sound'
-
 export const showVolume = () => dispatch => {
   dispatch({
     type: 'SHOW_VOLUME'
@@ -39,30 +37,6 @@ export const setAudio = (audio, title, id, img, podcast) => dispatch => {
     id: id,
     img: img,
     podcast: podcast
-  })
-}
-
-export const handlePlay = data => (dispatch, getState) => {
-  const state = getState()
-
-  if (state.player.playStatus === Sound.status.PLAYING) {
-    dispatch({
-      type: 'HANDLE_PLAY',
-      payload: data
-    })
-  }
-}
-
-export const pauseAudio = () => (dispatch, getState) => {
-  const state = getState()
-  const paused =
-    state.player.playStatus === Sound.status.PLAYING
-      ? Sound.status.PAUSED
-      : Sound.status.PLAYING
-
-  dispatch({
-    type: 'PAUSE_AUDIO',
-    paused
   })
 }
 
