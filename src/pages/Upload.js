@@ -27,7 +27,7 @@ Follow the steps below to share your thoughts on The Status Network with others.
 
 \`\`\`js
 # src/data/podcasts.js
-# We use https://feeds-soundcloud-proxy.status.im/ as a proxy server for SoundCloud
+# We use \`https://feeds-soundcloud-proxy.status.im/\` as a proxy server for SoundCloud
 
 export const podcasts = [
   {

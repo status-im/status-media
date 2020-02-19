@@ -63,7 +63,7 @@ const townhallData = [
   },
   {
     key: 9,
-    title: "Town Hall # 50 February 17, 2020 ",
+    title: "Town Hall # 51 February 17, 2020 ",
     date: "2020-02-17",
     slides: "https://github.com/status-im/townhall-archive/blob/master/200217%20-%20Town%20Hall.pdf",
     url: "https://youtu.be/rx_N6L8UQkY"
