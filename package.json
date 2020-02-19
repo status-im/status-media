@@ -1,9 +1,9 @@
 {
-  "name": "status-podcast",
+  "name": "status-media",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://statusnetwork.com/",
+  "homepage": "https://media.statusnetwork.com/",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "babel-core": "^6.26.3",
@@ -16,8 +16,10 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
+    "promisify": "^0.0.3",
     "rss-parser": "^3.7.5"
   },
   "dependencies": {
@@ -39,6 +41,8 @@
   },
   "scripts": {
     "dev": "parcel index.html --out-dir dev",
-    "build": "parcel build index.html --out-dir build --no-content-hash --no-source-maps"
+    "build": "parcel build index.html --out-dir build --no-content-hash --no-source-maps",
+    "deploy": "node bin/deploy.js",
+    "clean": "git clean -fd build"
   }
 }
