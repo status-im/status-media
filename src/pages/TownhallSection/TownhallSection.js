@@ -44,7 +44,7 @@ const townhallData = [
     key: 6,
     title: "Town Hall End of Year: December 9, 2019",
     date: "2019-12-09",
-    slides: "https://github.com/status-im/townhall-archive/blob/master/190912%20-%20Town%20Hall.pdf",
+    slides: "https://github.com/status-im/townhall-archive/blob/master/191209%20-%20Town%20Hall.pdf",
     url: "https://youtu.be/_Mpc3dVNPmw?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
   },
   {
@@ -60,6 +60,13 @@ const townhallData = [
     date: "2020-02-03",
     slides: "https://github.com/status-im/townhall-archive/blob/master/200203%20-%20Town%20Hall.pdf",
     url: "https://youtu.be/3JW-2ESF2qo"
+  },
+  {
+    key: 9,
+    title: "Town Hall # 50 February 17, 2020 ",
+    date: "2020-02-17",
+    slides: "https://github.com/status-im/townhall-archive/blob/master/200217%20-%20Town%20Hall.pdf",
+    url: "https://youtu.be/rx_N6L8UQkY"
   },
 ];
 
