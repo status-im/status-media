@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 // Components
@@ -19,7 +19,7 @@ import Upload from '../pages/Upload'
 import NowPlayingPage from '../pages/NowPlaying'
 
 const AppRouter = ({ theme }) => (
-  <Router>
+  <HashRouter>
     <MobileNav />
     <div className={`app-wrapper ${theme}`}>
       <div>
@@ -40,7 +40,7 @@ const AppRouter = ({ theme }) => (
         </Switch>
       </div>
     </div>
-  </Router>
+  </HashRouter>
 )
 
 const mapStateToProps = state => ({
