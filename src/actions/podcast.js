@@ -27,11 +27,15 @@ export const fetchPodcast = url => dispatch => {
   parser.parseURL(url, function(err, feed) {
     if (feed) {
       const title = feed.title
-      const website = feed.link
+      let website = feed.link
       const author = feed.itunes.author
       const episodes = feed.items
       const description = feed.description
       const img = feed.image
+
+      if (website.substring(0,3) === 'www') {
+        website = 'https://' + website;
+      }
 
       dispatch({
         type: 'FETCH_PODCAST',
