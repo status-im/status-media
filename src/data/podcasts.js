@@ -41,10 +41,10 @@ export const podcasts = [
   },
   {
     category: 'featured',
-    name: 'Aibeats',
-    creator: 'Lilsiri.eth Ξ',
-    link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:560409111/sounds.rss',
+    name: 'Onwards',
+    creator: 'Daniel Weinzveg',
+    link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:80553246/sounds.rss',
     img:
-      'https://lh3.googleusercontent.com/NJ_OW1D8tM5Ivm87Vci9WX7hCfdKgoHMQKlq8Zr-g-ZHfwQ5O_O6S7iHV-qHVWuEBNyotU63nvxF32agEK10dgpzePeXsRI4IIdYvt2SiRABwsUZVw35delHGckGXVIbjGQ--7tTqA=w2400'
-  },
+      'https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/639445/639445-1528081749835-3cb9a831dc539.jpg'
+  }
 ]
