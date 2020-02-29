@@ -41,7 +41,7 @@ export const podcasts = [
   },
   {
     category: 'featured',
-    name: 'Onwards',
+    name: 'Onwrd',
     creator: 'Daniel Weinzveg',
     link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:80553246/sounds.rss',
     img:

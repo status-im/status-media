@@ -104,6 +104,23 @@
   background: linear-gradient(45deg, #c31432, #240b36);
 }
 
+.social {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 690px) and (min-width: 600px) {
+  .social {
+    margin-right: 8px;
+    display: inline-block;
+  }
+
+  .app-wrapper-content {
+    padding: 25px 30px !important;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .ChannelInfo {
     flex-direction: column;
@@ -118,5 +135,11 @@
 
   .ChannelInfo-title {
     font-size: 2.75rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .social {
+    margin-right: 8px;
   }
 }

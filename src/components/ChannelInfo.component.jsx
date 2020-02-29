@@ -1,7 +1,20 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { podcasts } from '../data/podcasts'
-import ProgressiveImage from 'react-progressive-image'
+import {
+  TwitterShareButton,
+  TwitterIcon,
+  FacebookShareButton,
+  FacebookIcon,
+  RedditShareButton,
+  RedditIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  EmailShareButton,
+  EmailIcon,
+} from "react-share";
 
 import '../css/ChannelInfo.styles.css'
 
@@ -10,9 +23,8 @@ class ChannelInfo extends Component {
     const { theme } = this.props
     const { title, description, website, author } = this.props.podcast
 
-    const podcastImage = podcasts
-      .filter(p => p.name === title)[0]
-
+    const podcastTitle = 'The Status Network Podcast: ' + title
+    const shareUrl = window.location.href
 
     return (
       <div className={`ChannelInfo ${theme}`}>
@@ -24,6 +36,26 @@ class ChannelInfo extends Component {
             <i className='fas fa-external-link-alt' />
             Visit website
           </a>
+          <div style={{ marginTop: '30px' }}>
+            <TwitterShareButton url={shareUrl} title={podcastTitle} hashtags={["ethstatus"]} className="social">
+              <TwitterIcon size={32} round />
+            </TwitterShareButton>
+            <FacebookShareButton url={shareUrl} title={podcastTitle} className="social">
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+            <RedditShareButton url={shareUrl} title={podcastTitle} className="social">
+              <RedditIcon size={32} round />
+            </RedditShareButton>
+            <TelegramShareButton url={shareUrl} title={podcastTitle} className="social">
+              <TelegramIcon size={32} round />
+            </TelegramShareButton>
+            <WhatsappShareButton url={shareUrl} title={podcastTitle} className="social">
+              <WhatsappIcon size={32} round />
+            </WhatsappShareButton>
+            <EmailShareButton url={shareUrl} className="social">
+              <EmailIcon size={32} round />
+            </EmailShareButton>
+          </div>
         </div>
       </div>
     )
