@@ -11,7 +11,6 @@ import {
   hideVolume
 } from '../actions/player'
 import AudioPlayer from 'react-h5-audio-player';
-
 import 'react-h5-audio-player/lib/styles.css';
 import '../css/Controls.styles.css'
 
@@ -149,6 +148,7 @@ class Controls extends Component {
         </div>
         <AudioPlayer
           src={track.src}
+          showLoopControl={false}
         />
       </div>
     )
