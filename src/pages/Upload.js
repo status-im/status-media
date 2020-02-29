@@ -7,27 +7,27 @@ import '../css/markdown.css'
 const input = `
 # Publish your Status Podcasts!
 
-Follow the steps below to share your thoughts on The Status Network with others.
+Follow the steps below to make your podcast public.
 
 <br/>
 
 ## How can I publish my Status podcasts?
 * Create a podcast channel on SoundCloud, iTunes, SimpleCast, or any platform supporting [RSS](https://en.wikipedia.org/wiki/RSS).
 * Below are instructions for [SoundCloud](https://soundcloud.com/).
-  - Create a channel and enable [RSS feed](https://help.soundcloud.com/hc/en-us/articles/115003570048-Setting-up-your-podcast-s-RSS-feed).
-  - [Add tracks](https://help.soundcloud.com/hc/en-us/articles/115003451347) to your RSS feed.
-  - Send the URL of your RSS Feed to \`jinho@status.im\` (e.g., http://feeds.soundcloud.com/users/soundcloud:users:741837922/sounds.rss).
+  - Create a podcast and set up your podcast's [RSS feed](https://help.soundcloud.com/hc/en-us/articles/115003570048-Setting-up-your-podcast-s-RSS-feed).
+  - [Add tracks](https://help.soundcloud.com/hc/en-us/articles/115003451347) to the RSS feed.
+  - Send the URL of your RSS Feed to \`jinho@status.im\` (e.g., https://feeds.soundcloud.com/users/soundcloud:users:741837922/sounds.rss).
   - The RSS should contain at least 1 episode.
 
 <br/>
 
-## I want to submit a pull request to add my podcasts
+## I want to submit a pull request adding my podcasts to this website
 
-* Submit a pull request to this [repo](https://github.com/jinhojang6/status-podcast) and update your RSS as below.
+* You can submit a pull request to this [repository](https://github.com/status-im/status-media) in accordance with the format below.
 
 \`\`\`js
 # src/data/podcasts.js
-# We use \`https://feeds-soundcloud-proxy.status.im/\` as a proxy server for SoundCloud
+# If you use SoundCloud, please add \`https://feeds-soundcloud-proxy.status.im/\` to your RSS URL as below.
 
 export const podcasts = [
   {
@@ -44,8 +44,7 @@ export const podcasts = [
 
 ## Known issues
 
-Found an issue with playing HTML5 audio in the background on iOS
-
+There is an issue with playing HTML5 audio in the background on iOS.
 
 <br/>
 <br/>
