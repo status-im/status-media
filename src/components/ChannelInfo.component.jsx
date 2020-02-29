@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { podcasts } from '../data/podcasts'
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { css } from 'glamor';
 import {
   TwitterShareButton,
   TwitterIcon,
@@ -15,10 +16,26 @@ import {
   EmailShareButton,
   EmailIcon,
 } from "react-share";
-
 import '../css/ChannelInfo.styles.css'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 class ChannelInfo extends Component {
+
+  notify = () => toast.info('Copied to clipboard', {
+    position: "top-center",
+    autoClose: 1500,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: false,
+    bodyClassName: css({
+      fontSize: '20px',
+      textAlign: 'center',
+    }),
+  },);
+
   render() {
     const { theme } = this.props
     const { title, description, website, author } = this.props.podcast
@@ -36,7 +53,18 @@ class ChannelInfo extends Component {
             <i className='fas fa-external-link-alt' />
             Visit website
           </a>
-          <div style={{ marginTop: '30px' }}>
+          <ToastContainer
+            position="top-center"
+            autoClose={1500}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnVisibilityChange={false}
+            draggable={false}
+            pauseOnHover={false}
+          />
+          <div style={{ marginTop: '40px', display: 'flex'}}>
             <TwitterShareButton url={shareUrl} title={podcastTitle} hashtags={["ethstatus"]} className="social">
               <TwitterIcon size={32} round />
             </TwitterShareButton>
@@ -55,6 +83,9 @@ class ChannelInfo extends Component {
             <EmailShareButton url={shareUrl} className="social">
               <EmailIcon size={32} round />
             </EmailShareButton>
+            <CopyToClipboard text={shareUrl} className="social">
+                <button onClick={this.notify}><i className='fas fa-link link'/></button>
+            </CopyToClipboard>
           </div>
         </div>
       </div>

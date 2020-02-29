@@ -110,6 +110,10 @@
   text-align: center;
 }
 
+.link {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 690px) and (min-width: 600px) {
   .social {
     margin-right: 8px;
