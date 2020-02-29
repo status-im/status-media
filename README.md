@@ -30,7 +30,7 @@ git clone https://github.com/jinhojang6/status-podcast.git
 yarn install
 ```
 
-2. Start up the development server
+3. Start up the development server
 
 ```sh
 yarn run dev
@@ -38,7 +38,7 @@ yarn run dev
 #visit http://localhost:1234/
 ```
 
-2. Build
+4. Build
 
 ```sh
 yarn run build
