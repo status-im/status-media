@@ -12,7 +12,7 @@ import 'antd/lib/input/style/index.css';
 class Townhall extends Component {
   render() {
     return (
-      <div>
+      <div style={{marginBottom: '150px'}}>
          <TownhallSection />
       </div>
     )
