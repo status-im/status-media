@@ -54,8 +54,8 @@ export const fetchPodcast = url => dispatch => {
     else {
       let errorMsg =
       err.code == 'ECONNABORTED'
-        ? 'Oh-oh, this is taking longer that usual...'
-        : 'Oh-oh, something went wrong ...'
+        ? 'Parsing the podcast is taking longer that usual'
+        : 'Something went wrong. Please refresh this page'
 
       dispatch({
         type: 'SET_ERROR',
