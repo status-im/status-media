@@ -8,6 +8,7 @@ export const setLoading = () => dispatch => {
 
 let Parser = require('rss-parser');
 let parser = new Parser({
+  maxRedirects: 100,
   customFields: {
     feed: ['description', 'description'],
   }
