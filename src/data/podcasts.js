@@ -40,7 +40,6 @@ export const podcasts = [
       'https://lh3.googleusercontent.com/cwsJClMXMYPuo17tQmeZDYhXI7ZKQta4AUGJ0mKrFaPBpRFssVpxLvzE-eScQ8vdBkTvcB9B5oF_tyY_gQAix-7muSwBfPrj1x5Pfa4r-6TCXJqxg6l8beQ9GVGjlDquy0I_oYlGKg=w2400'
   },
   {
-    category: 'featured',
     name: 'Onwrd',
     creator: 'Daniel Weinzveg',
     link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:80553246/sounds.rss',
