@@ -27,7 +27,6 @@ Follow the steps below to make your podcast public.
 
 \`\`\`js
 # src/data/podcasts.js
-# If you use SoundCloud, please add \`https://feeds-soundcloud-proxy.status.im/\` to your RSS URL as below.
 
 export const podcasts = [
   {
