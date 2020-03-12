@@ -38,8 +38,8 @@ class EpisodeList extends Component {
           theme={theme}
           title={e.title}
           trackId={e.guid}
-          date={e.published}
-          duration={e.duration}
+          date={e.pubDate}
+          duration={e.itunes.duration}
           audio={e.enclosure.url}
           description={e.description}
           setEpisode={this.setEpisode}

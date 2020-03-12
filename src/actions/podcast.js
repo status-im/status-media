@@ -11,6 +11,7 @@ let parser = new Parser({
   maxRedirects: 100,
   customFields: {
     feed: ['description', 'description'],
+    feed: ['pubDate', 'pubDate'],
   }
 });
 
@@ -33,6 +34,7 @@ export const fetchPodcast = url => dispatch => {
       const episodes = feed.items
       const description = feed.description
       const img = feed.image
+      const pubDate = feed.pubDate
 
       if (website.substring(0,3) === 'www') {
         website = 'https://' + website;
@@ -47,7 +49,8 @@ export const fetchPodcast = url => dispatch => {
           author,
           website,
           episodes,
-          description
+          description,
+          pubDate
         }
       })
     }

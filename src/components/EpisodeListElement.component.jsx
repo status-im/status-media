@@ -38,7 +38,7 @@ class EpisodeListElement extends Component {
     const now = moment()
     const releaseDate = moment(date)
 
-    return now.diff(releaseDate, 'days') > 14
+    return now.diff(releaseDate, 'days') > 5
       ? moment(date).format('LL')
       : moment(date).fromNow()
   }
@@ -46,7 +46,7 @@ class EpisodeListElement extends Component {
   render() {
     const { date, title, theme, trackId, duration, nowPlayingId } = this.props
     const isPlaying = trackId === nowPlayingId
-
+    
     const minutesLong = Math.round(
       moment.duration(duration, 'seconds').asMinutes()
     )
