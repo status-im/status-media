@@ -148,7 +148,7 @@ class Controls extends Component {
         </div>
         <AudioPlayer
           src={track.src}
-          showLoopControl={false}
+          // showLoopControl={false}
         />
       </div>
     )

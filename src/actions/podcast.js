@@ -1,5 +1,15 @@
 import "@babel/polyfill";
 
+export const podcastData = (category, name) => dispatch => {
+  localStorage.setItem('category', category)
+  localStorage.setItem('name', name)
+  dispatch({
+    type: 'PODCAST_DATA',
+    category: category,
+    name: name,
+  })
+}
+
 export const setLoading = () => dispatch => {
   dispatch({
     type: 'SET_LOADING'

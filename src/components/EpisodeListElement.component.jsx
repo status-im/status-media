@@ -3,13 +3,14 @@ import moment from 'moment'
 import { connect } from 'react-redux'
 import { setAudio } from '../actions/player'
 import { withRouter } from 'react-router-dom'
+import { podcasts } from '../data/podcasts'
 
 import '../css/EpisodeListElement.styles.css'
 
 class EpisodeListElement extends Component {
+  
   handleOnClick = e => {
     this.playAudio()
-
     if (window.innerWidth <= 600) {
       this.props.history.push('/nowplaying')
     }
@@ -44,7 +45,8 @@ class EpisodeListElement extends Component {
   }
 
   render() {
-    const { date, title, theme, trackId, duration, nowPlayingId } = this.props
+    const { date, title, theme, trackId, duration, nowPlayingId, name } = this.props
+    console.log(this.props)
     const isPlaying = trackId === nowPlayingId
     
     const minutesLong = Math.round(
@@ -63,7 +65,7 @@ class EpisodeListElement extends Component {
             {minutesLong} mins
           </p>
           <h3 className='EpisodeListElement-title'>
-            {title.length > 50 ? title.substring(0, 50) + '...' : title}
+            {title}
           </h3>
         </div>
         <button
@@ -86,7 +88,9 @@ class EpisodeListElement extends Component {
 const mapStateToProps = state => ({
   nowPlayingId: state.player.track.id,
   podcastImage: state.podcast.podcast.img,
-  podcast: state.podcast.podcast.title
+  podcast: state.podcast.podcast.title,
+  category: state.podcast.category,
+  name: state.podcast.name
 })
 
 export default withRouter(

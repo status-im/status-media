@@ -4,10 +4,16 @@ import { Link } from 'react-router-dom'
 import ProgressiveImage from 'react-progressive-image'
 import { podcasts, categories } from '../data/podcasts'
 import { switchDisplay } from '../actions/settings'
+import { podcastData } from '../actions/podcast'
 
 import '../css/HomePage.styles.css'
 
 class Featured extends Component {
+
+  handlePodcastData(podcast){
+    this.props.podcastData(podcast.category, podcast.name )
+  }
+
   displayGrid = () => {
     const list = []
     podcasts.map((podcast) => {
@@ -16,31 +22,33 @@ class Featured extends Component {
       }
     })
 
-    const gridPodcasts = list.map(podcast => (
-        <Link
-        key={podcast.name}
-        className="Home-podcast"
-        to={`/podcast/${podcast.name.replace(/ /g, '_')}`}
-        >
-          <div>
-            <ProgressiveImage
-              src={podcast.img.replace(/100x100/g, '360x360')}
-              placeholder={podcast.img.replace(/100x100/g, '30x30')}
-            >
-              {src => <img src={src} alt="podcast cover" />}
-            </ProgressiveImage>
+    const gridPodcasts = list.map(podcast => 
+      {
+        return(
+          <Link
+            key={podcast.name}
+            className="Home-podcast"
+            to={`/podcast/${podcast.name.replace(/ /g, '_')}`}
+          >
+            <div onClick={() => this.handlePodcastData(podcast)}>
+              <ProgressiveImage
+                src={podcast.img.replace(/100x100/g, '360x360')}
+                placeholder={podcast.img.replace(/100x100/g, '30x30')}
+              >
+                {src => <img src={src} alt="podcast cover" />}
+              </ProgressiveImage>
 
-            <h3 className="Home-podcast-title">
-              {podcast.name.length > 20
-                ? podcast.name.substring(0, 20) + '...'
-                : podcast.name}
-            </h3>
-            <h3 className="Home-podcast-creator">
-                {podcast.creator}
-            </h3>
-          </div>
-        </Link>
-      ))
+              <h3 className="Home-podcast-title">
+                {podcast.name.length > 20
+                  ? podcast.name.substring(0, 20) + '...'
+                  : podcast.name}
+              </h3>
+              <h3 className="Home-podcast-creator">
+                  {podcast.creator}
+              </h3>
+            </div>
+          </Link>
+      )})
 
     return (
       <Fragment>
@@ -104,10 +112,10 @@ class Featured extends Component {
 
 const mapStateToProps = state => ({
   theme: state.settings.theme,
-  display: state.settings.display
+  display: state.settings.display,
 })
 
 export default connect(
   mapStateToProps,
-  { switchDisplay }
+  { switchDisplay, podcastData }
 )(Featured)

@@ -29,7 +29,8 @@ export const podcasts = [
     creator: 'Corey & Demetrick',
     link: 'https://feeds.simplecast.com/xCQr3ykc',
     img:
-      'https://lh3.googleusercontent.com/h-NtM2BbbFddHMNyTGBmGdzge-zqyy9-LCSUnRF8r7st1s6ZIzZM01YFTAcFkvlf8TfF2cptTBSlNUGEVpf_1SM8LPO00tPo6OAKaSDePLu6_TC6IBWSZpVeIr1aTvDXrEwuFqPQ0w=w2400'
+      'https://lh3.googleusercontent.com/h-NtM2BbbFddHMNyTGBmGdzge-zqyy9-LCSUnRF8r7st1s6ZIzZM01YFTAcFkvlf8TfF2cptTBSlNUGEVpf_1SM8LPO00tPo6OAKaSDePLu6_TC6IBWSZpVeIr1aTvDXrEwuFqPQ0w=w2400',
+    featured: ['']
   },
   {
     category: 'featured',
@@ -37,7 +38,8 @@ export const podcasts = [
     creator: 'Epicenter Media',
     link: 'https://feeds.simplecast.com/lKmQDG9R',
     img:
-      'https://lh3.googleusercontent.com/cwsJClMXMYPuo17tQmeZDYhXI7ZKQta4AUGJ0mKrFaPBpRFssVpxLvzE-eScQ8vdBkTvcB9B5oF_tyY_gQAix-7muSwBfPrj1x5Pfa4r-6TCXJqxg6l8beQ9GVGjlDquy0I_oYlGKg=w2400'
+      'https://lh3.googleusercontent.com/cwsJClMXMYPuo17tQmeZDYhXI7ZKQta4AUGJ0mKrFaPBpRFssVpxLvzE-eScQ8vdBkTvcB9B5oF_tyY_gQAix-7muSwBfPrj1x5Pfa4r-6TCXJqxg6l8beQ9GVGjlDquy0I_oYlGKg=w2400',
+    featured: ['']
   },
   {
     category: 'featured',
@@ -45,6 +47,7 @@ export const podcasts = [
     creator: 'Daniel Weinzveg',
     link: 'https://feeds.soundcloud.com/users/soundcloud:users:80553246/sounds.rss',
     img:
-      'https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/639445/639445-1528081749835-3cb9a831dc539.jpg'
+      'https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/639445/639445-1528081749835-3cb9a831dc539.jpg',
+    featured: ['']
   }
 ]

@@ -8,7 +8,9 @@ const podcastState = {
     description: ''
   },
   error: '',
-  loading: true
+  loading: true,
+  category: localStorage.getItem('category') || '',
+  name: localStorage.getItem('name') || ''
 }
 
 const podcastReducer = (state = podcastState, action) => {
@@ -21,6 +23,12 @@ const podcastReducer = (state = podcastState, action) => {
           ...state.podcast,
           ...action.podcast
         }
+      }
+    case 'PODCAST_DATA':
+      return {
+        ...state,
+        category: action.category,
+        name: action.name
       }
     case 'SET_ERROR':
       return {
