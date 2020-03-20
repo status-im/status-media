@@ -41,7 +41,7 @@ class EpisodeList extends Component {
           date={e.pubDate}
           duration={e.itunes.duration}
           audio={e.enclosure.url}
-          description={e.description}
+          description={e.content}
           setEpisode={this.setEpisode}
         />
       ))

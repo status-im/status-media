@@ -45,8 +45,25 @@ class EpisodeListElement extends Component {
   }
 
   render() {
-    const { date, title, theme, trackId, duration, nowPlayingId, name } = this.props
-    console.log(this.props)
+    const { date, title, theme, trackId, duration, nowPlayingId, podcast } = this.props
+    console.log(podcast)
+    const filteredData = podcasts.filter(element => {
+      return element.creator == podcast.author
+    })
+
+    let featured = 0
+    console.log(filteredData)
+    const stringToSearch = filteredData[0].featured
+    // console.log(stringToSearch)
+    for(let keyword of stringToSearch) {
+      if (title.includes(keyword)) {
+        featured = 1
+        // console.log(keyword)
+        break;
+      }
+    }
+
+
     const isPlaying = trackId === nowPlayingId
     
     const minutesLong = Math.round(
@@ -63,6 +80,8 @@ class EpisodeListElement extends Component {
             {this.formatDate(date)}
             <span> &#8226; </span>
             {minutesLong} mins
+            <span> &#160; </span>
+            { featured ? <span style={{color: '#005b96', fontWeight: 'bold'}}>Featured</span> : ''}
           </p>
           <h3 className='EpisodeListElement-title'>
             {title}
@@ -88,7 +107,7 @@ class EpisodeListElement extends Component {
 const mapStateToProps = state => ({
   nowPlayingId: state.player.track.id,
   podcastImage: state.podcast.podcast.img,
-  podcast: state.podcast.podcast.title,
+  podcast: state.podcast.podcast,
   category: state.podcast.category,
   name: state.podcast.name
 })
