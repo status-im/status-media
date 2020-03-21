@@ -136,18 +136,37 @@
 
 @media only screen and (max-width: 1299px) {
   .EpisodeListElement {
-    width: 90%;
+    width: 100%;
     padding: 0;
-    margin: 30px 0;
+    margin: 22px 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .sidebar {
+    width: 185px;
+  }
+
+  .title {
+    left: 185px;
+  }
+
+  .rhap_container {
+    left: 185px;
+    padding-right: 210px;
   }
 }
 
 
 @media only screen and (max-width: 600px) {
   .EpisodeListElement {
-    width: 80%;
+    width: 98%;
     padding: 0;
-    margin: 30px 0;
+    margin: 22px 0;
+  }
+
+  .EpisodeListElement-text {
+    width: 90%;
   }
 
   .EpisodeListElement-play {

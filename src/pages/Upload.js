@@ -47,7 +47,18 @@ export const podcasts = [
 - There is an issue with playing HTML5 audio on iOS. It doesn't work in the background mode and cannot control the volume.
 - Doesn't work in IE
 
+<br/>
+<br/>
 
+# Contact us
+
+- Status: https://join.status.im/chat/public/status
+
+- Discord: https://discord.gg/TtyPAWm
+
+- Email: jinho@status.im
+
+<br/>
 <br/>
 <br/>
 <br/>
