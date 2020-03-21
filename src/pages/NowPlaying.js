@@ -10,7 +10,7 @@ class NowPlaying extends Component {
   render() {
     const { playStatus, loading } = this.props.player
     const { img, title, podcast } = this.props.player.track
-    console.log(podcast)
+
     const podcastLoading = playStatus === 'PLAYING' && loading
     let podcastImage = ''
 

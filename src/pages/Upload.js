@@ -34,7 +34,8 @@ export const podcasts = [
     name: 'Everything Status',
     link: 'https://feeds-soundcloud-proxy.status.im/users/soundcloud:users:741837922/sounds.rss',
     img:
-      '{img URL}'
+      '{img URL}',
+    featured: []
   },
   ...
 \`\`\`
@@ -43,7 +44,8 @@ export const podcasts = [
 
 ## Known issues
 
-There is an issue with playing HTML5 audio in the background on iOS.
+There is an issue with playing HTML5 audio on iOS. It doesn't work in the background mode and cannot control the volume.
+
 
 <br/>
 <br/>

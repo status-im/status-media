@@ -81,7 +81,7 @@
 
 .title {
   position: fixed;
-  bottom: 90px;
+  bottom: 88px;
   padding: 5px;
   background-color: #6d6d6d;
   height: 30px;
@@ -108,9 +108,14 @@
     background-color: #2b2b2b;
   }
 
+  .rhap_volume-container {
+    flex: 0 1 70px;
+  }
+  
+
   .title {
     position: fixed;
-    bottom: 150px;
+    bottom: 148px;
     padding: 5px;
     background-color: #6d6d6d;
     height: 30px;

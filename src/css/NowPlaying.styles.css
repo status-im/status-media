@@ -70,9 +70,6 @@
 
 /* ============ Themes ============ */
 
-.NowPlaying-player.light img {
-  border: 3px solid #eee;
-}
 
 .NowPlaying-player.dark .NowPlaying-info h3 {
   color: #eee;

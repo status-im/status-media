@@ -46,13 +46,11 @@ class EpisodeListElement extends Component {
 
   render() {
     const { date, title, theme, trackId, duration, nowPlayingId, podcast } = this.props
-    console.log(podcast)
     const filteredData = podcasts.filter(element => {
       return element.creator == podcast.author
     })
 
     let featured = 0
-    console.log(filteredData)
     const stringToSearch = filteredData[0].featured
     // console.log(stringToSearch)
     for(let keyword of stringToSearch) {
