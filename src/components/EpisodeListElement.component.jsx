@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import moment from 'moment'
 import { connect } from 'react-redux'
 import { setAudio } from '../actions/player'
@@ -61,6 +61,19 @@ class EpisodeListElement extends Component {
       }
     }
 
+    let videoFlag = 0
+    let videoURL = ''
+    const videosToSearch = filteredData[0].videos
+    if (videosToSearch.length !== 0) {
+      for(let video of videosToSearch) {
+        if (video.title === title) {
+          videoFlag = 1
+          videoURL = video.url
+          console.log(videoURL)
+          break;
+        }
+      }
+    }
 
     const isPlaying = trackId === nowPlayingId
     
@@ -69,6 +82,7 @@ class EpisodeListElement extends Component {
     )
 
     return (
+      <div className="episode-container">
       <div className={`EpisodeListElement ${theme}`} title={title}>
         <div
           className='EpisodeListElement-text'
@@ -97,6 +111,10 @@ class EpisodeListElement extends Component {
             <i className='material-icons'>play_arrow</i>
           )}
         </button>
+      </div>
+      <div class="youtube-container">
+        { videoFlag ? <a href={videoURL} target="_blank"><i className="fab fa-youtube youtube" style={{color:'#c4302b'}}></i></a> : ''}
+      </div>
       </div>
     )
   }
