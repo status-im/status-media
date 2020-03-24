@@ -34,7 +34,7 @@ export const podcasts = [
     link: 'https://feeds.simplecast.com/xCQr3ykc',
     img:
       'https://lh3.googleusercontent.com/h-NtM2BbbFddHMNyTGBmGdzge-zqyy9-LCSUnRF8r7st1s6ZIzZM01YFTAcFkvlf8TfF2cptTBSlNUGEVpf_1SM8LPO00tPo6OAKaSDePLu6_TC6IBWSZpVeIr1aTvDXrEwuFqPQ0w=w2400',
-    featured: ['Wash Your Hands', 'Corey, Dee, and Ray From Paris with COVID-19', "#75-Truman Esmond"],
+    featured: ['Wash Your Hands', 'Corey, Dee, and Ray From Paris with COVID-19', "#75-Truman Esmond", "The Bitcoin Podcast #301"],
     videos: []
   },
   {
