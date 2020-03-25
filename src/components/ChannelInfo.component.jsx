@@ -65,6 +65,9 @@ class ChannelInfo extends Component {
             pauseOnHover={false}
           />
           <div style={{ marginTop: '40px', display: 'flex'}}>
+            <a href="https://status.im/get/" target='_blank' className='get-status'>
+                <img src={require("../images/symbol.png")} width="32px" height="auto"/>
+            </a>
             <TwitterShareButton url={shareUrl} title={podcastTitle} hashtags={["ethstatus"]} className="social">
               <TwitterIcon size={32} round />
             </TwitterShareButton>
@@ -74,12 +77,6 @@ class ChannelInfo extends Component {
             <RedditShareButton url={shareUrl} title={podcastTitle} className="social">
               <RedditIcon size={32} round />
             </RedditShareButton>
-            <TelegramShareButton url={shareUrl} title={podcastTitle} className="social">
-              <TelegramIcon size={32} round />
-            </TelegramShareButton>
-            <WhatsappShareButton url={shareUrl} title={podcastTitle} className="social">
-              <WhatsappIcon size={32} round />
-            </WhatsappShareButton>
             <EmailShareButton url={shareUrl} className="social">
               <EmailIcon size={32} round />
             </EmailShareButton>

@@ -31,6 +31,14 @@
   height: 100%;
 }
 
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.cta:hover {
+  color: white !important;
+}
+
 .sidebar li {
   list-style: none;
 }
@@ -40,6 +48,10 @@
   margin: 25px 0;
   text-align: left;
   color: #6d6d6d;
+}
+
+.sidebar-link:hover {
+  color: #acacac;
 }
 
 .sidebar-link a {

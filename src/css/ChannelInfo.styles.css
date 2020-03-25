@@ -39,6 +39,21 @@
   text-align: left;
 }
 
+
+/* .get-status img {
+  margin-right: 5px;
+} */
+
+.get-status {
+  color: rgb(167, 167, 167);
+  background: none;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+}
+
 .ChannelInfo-website {
   color: #fff;
   background: #3498db;
