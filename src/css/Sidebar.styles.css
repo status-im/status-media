@@ -20,9 +20,10 @@
 
 .sidebar-top {
   color: rgba(255, 255, 255, 0.5);
-  padding: 15px 5px;
-  margin-bottom: 25px;
-  text-align: left;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .sidebar ul {
