@@ -32,8 +32,8 @@
   height: 100%;
 }
 
-.margin-bottom-30 {
-  margin-bottom: 30px !important;
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
 }
 
 .cta:hover {
@@ -47,6 +47,13 @@
 .sidebar-link {
   font-size: 1.4rem;
   margin: 25px 0;
+  text-align: left;
+  color: #6d6d6d;
+}
+
+.sidebar-bottom {
+  font-size: 1.4rem;
+  margin: 10px 0 10px 0;
   text-align: left;
   color: #6d6d6d;
 }

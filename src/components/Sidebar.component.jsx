@@ -55,12 +55,12 @@ class Sidebar extends Component {
                 <h4>Upload</h4>
               </Link>
             </li>
-            <li className='sidebar-link cta settings'>
+            <li className='sidebar-bottom cta settings'>
               <a href="https://statusnetwork.com/" target="_bank">
                 <h4>The Status Network</h4>
               </a>
             </li>
-            <li className='sidebar-link cta margin-bottom-30'>
+            <li className='sidebar-bottom cta margin-bottom-20'>
               <a href="https://status.im/get/" target="_bank">
                 <h4>Get Status</h4>
               </a>
