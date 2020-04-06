@@ -54,11 +54,14 @@ export const podcasts = [
     link: 'https://feeds.soundcloud.com/users/soundcloud:users:80553246/sounds.rss',
     img:
       'https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded400/639445/639445-1528081749835-3cb9a831dc539.jpg',
-    featured: ['On Making Web3 Accessible with Jonny Zerah of Status'],
+    featured: ['Onwrd Ep. 31', 'Onwrd Ep.34'],
     videos: [
       { title: 'Onwrd Ep. 31 - On Making Web3 Accessible with Jonny Zerah of Status',
         url: 'https://youtu.be/V0xgzqejVsQ' 
-      }
+      },
+      { title: 'Onwrd Ep.34 - On Peer-to-Peer Lending with Sidney Powell of Maple.Finance',
+        url: 'https://youtu.be/SrPWirwUfVM?list=PLbrz7IuP1hrjzUPvIUoNt2SuWry3xyDEB' 
+      },
     ]
   }
 ]
