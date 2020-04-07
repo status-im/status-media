@@ -112,7 +112,7 @@ class EpisodeListElement extends Component {
           )}
         </button>
       </div>
-      <div class="youtube-container">
+      <div className="youtube-container">
         { videoFlag ? <a href={videoURL} target="_blank"><i className="fab fa-youtube youtube" style={{color:'#c4302b'}}></i></a> : ''}
       </div>
       </div>
