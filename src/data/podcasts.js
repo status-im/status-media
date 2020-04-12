@@ -19,6 +19,16 @@ export const podcasts = [
   },
   {
     category: 'status',
+    name: 'KenCrypto-Bee',
+    creator: 'Status Philippines',
+    link: 'https://feeds.soundcloud.com/users/soundcloud:users:807005173/sounds.rss',
+    img:
+      'https://i1.sndcdn.com/avatars-y6pN3zmnq63D5MJI-B4wGfg-t500x500.jpg',
+    featured: [],
+    videos: []
+  },
+  {
+    category: 'status',
     name: 'Status Korean Podcast',
     creator: '스테이터스 한국',
     link: 'https://feeds.soundcloud.com/users/soundcloud:users:772478986/sounds.rss',
