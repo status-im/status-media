@@ -52,7 +52,7 @@ class Sidebar extends Component {
             <li className='sidebar-link'>
               <Link to='/core-dev' activeClassName='sidebar-active' exact>
                 <i className='fas fa-phone' style={{ marginRight: '30px' }}/>
-                <h4>Core Meetings</h4>
+                <h4>Core Dev Meetings</h4>
               </Link>
             </li>
             <li className='sidebar-link'>
