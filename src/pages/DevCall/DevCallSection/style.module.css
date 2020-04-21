@@ -1,0 +1,40 @@
+.container {
+  padding: 20px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-right: auto;
+}
+
+.devcall-title {
+ font-size: 30px;
+ margin: 20px;
+}
+
+.devcall-title.light {
+  color: #555;
+ }
+
+ .devcall-title.dark {
+  color: #999;
+ }
+
+ .devcall-title.black {
+  color: #999;
+ }
+
+
+.devcall-title-search {
+  margin-bottom: 20px;
+}
+
+.action {
+  padding-left: 20px;
+}

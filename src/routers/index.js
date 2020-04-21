@@ -15,6 +15,7 @@ import NotFound from '../pages/NotFound'
 import SettingsPage from '../pages/Settings'
 import PodcastPage from '../pages/PodcastPage'
 import Townhall from '../pages/Townhall'
+import DevCall from '../pages/DevCall'
 import Upload from '../pages/Upload'
 import NowPlayingPage from '../pages/NowPlaying'
 
@@ -34,6 +35,7 @@ const AppRouter = ({ theme }) => (
           <Route path='/settings' exact component={SettingsPage} />
           <Route path='/nowplaying' exact component={NowPlayingPage} />
           <Route path='/townhall' exact component={Townhall} />
+          <Route path='/core-dev' exact component={DevCall} />
           <Route path='/upload' exact component={Upload} />
           <Route path='/podcast/:podcast' exact component={PodcastPage} />
           <Route component={NotFound} />

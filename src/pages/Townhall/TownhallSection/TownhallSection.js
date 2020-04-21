@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux'
 import styles from "./style.module.css";
 import { TownhallTable } from "../TownhallTable";
-import { TitleSearch } from "./TitleSearch";
+import { DateSearch } from "./DateSearch";
 
 const townhallData = [
   {
@@ -145,7 +145,7 @@ class TownhallSection extends Component {
       <section className={styles.container}>
         <header className={styles.header}>
           <h1 className={`townhall-title ${theme}`}>Status Town Hall Meetings</h1>
-          <TitleSearch onSearch={this.handleSearch} className="townhall-title-search" />
+          <DateSearch onSearch={this.handleSearch} className="townhall-title-search" />
           </header>
           <TownhallTable townhallData={this.state.townhallData} />
       </section>

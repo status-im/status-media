@@ -3,10 +3,10 @@ import { Input } from "antd";
 
 const { Search } = Input;
 
-export const TitleSearch = ({ onSearch, ...props }) => (
+export const DateSearch = ({ onSearch, ...props }) => (
   <div {...props}>
     <Search
-      placeholder="Enter Title"
+      placeholder="Enter Date"
       onSearch={onSearch}
       style={{ width: 200 }}
     />
