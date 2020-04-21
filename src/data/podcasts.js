@@ -44,7 +44,7 @@ export const podcasts = [
     link: 'https://feeds.simplecast.com/xCQr3ykc',
     img:
       'https://lh3.googleusercontent.com/h-NtM2BbbFddHMNyTGBmGdzge-zqyy9-LCSUnRF8r7st1s6ZIzZM01YFTAcFkvlf8TfF2cptTBSlNUGEVpf_1SM8LPO00tPo6OAKaSDePLu6_TC6IBWSZpVeIr1aTvDXrEwuFqPQ0w=w2400',
-    featured: ['#299', "#75", '#76',  '#77', '#78', '#300', '#301', '#302', '#303'],
+    featured: ['#299', "#75", '#76', '#77', '#78', '#79', '#300', '#301', '#302', '#303', '#304', '#305'],
     videos: []
   },
   {
@@ -55,7 +55,7 @@ export const podcasts = [
     img:
       'https://lh3.googleusercontent.com/cwsJClMXMYPuo17tQmeZDYhXI7ZKQta4AUGJ0mKrFaPBpRFssVpxLvzE-eScQ8vdBkTvcB9B5oF_tyY_gQAix-7muSwBfPrj1x5Pfa4r-6TCXJqxg6l8beQ9GVGjlDquy0I_oYlGKg=w2400',
     featured: ["Status", "The Untold Story", "In Pursuit of the", "Bringing the World", "The Self-Custody Crypto Bank", "Building a Better Proof of Stake", "Understanding the Lasting",
-    "Union Square Ventures"],
+    "Union Square Ventures", "AZTEC Protocol"],
     videos: []
   },
   {
