@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux'
 import styles from "./style.module.css";
 import { TownhallTable } from "../TownhallTable";
-import { TitleSearch } from "../TitleSearch";
+import { TitleSearch } from "./TitleSearch";
 
 const townhallData = [
   {
@@ -130,8 +130,8 @@ class TownhallSection extends Component {
   };
 
   handleSearch = searchText => {
-    const filteredEvents = townhallData.filter(({ title }) => {
-      return title.includes(searchText);
+    const filteredEvents = townhallData.filter(({ date }) => {
+      return date.includes(searchText);
     });
 
     this.setState({

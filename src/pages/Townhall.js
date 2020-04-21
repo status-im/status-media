@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TownhallSection from "./TownhallSection/TownhallSection";
+import TownhallSection from "./Townhall/TownhallSection/TownhallSection";
 import 'antd/lib/button/style/index.css';
 import 'antd/lib/menu/style/index.css';
 import 'antd/lib/dropdown/style/index.css';

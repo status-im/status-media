@@ -3,7 +3,6 @@ import Table from "antd/lib/table";
 
 import Button from "antd/lib/button";
 
-
 import { actionService } from "./townhallService";
 
 const TownhallTable = ({ townhallData }) => {
@@ -23,7 +22,7 @@ const TownhallTable = ({ townhallData }) => {
       key: "title"
     },
     {
-      title: "Date",
+      title: "Date (YYYY-MM-DD)",
       dataIndex: "date",
       key: "date"
     },

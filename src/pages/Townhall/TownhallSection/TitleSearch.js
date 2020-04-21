@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "antd";
 
-const Search = Input.Search;
+const { Search } = Input;
 
 export const TitleSearch = ({ onSearch, ...props }) => (
   <div {...props}>
