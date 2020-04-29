@@ -96,6 +96,13 @@ const townhallData = [
     slides: "https://github.com/status-im/townhall-archive/blob/master/200413%20-%20Town%20Hall.pdf",
     url: "https://youtu.be/LCJ1emqax4A"
   },
+  {
+    key: 14,
+    title: "Town Hall # 56 April 27, 2020",
+    date: "2020-04-27",
+    slides: "https://our.status.im/town-hall-56-april-27th-2020/",
+    url: "https://youtu.be/cTPGfgHbL0w"
+  },
 ];
 
 class TownhallSection extends Component {
