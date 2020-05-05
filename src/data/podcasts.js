@@ -44,7 +44,7 @@ export const podcasts = [
     link: 'https://feeds.simplecast.com/xCQr3ykc',
     img:
       'https://lh3.googleusercontent.com/h-NtM2BbbFddHMNyTGBmGdzge-zqyy9-LCSUnRF8r7st1s6ZIzZM01YFTAcFkvlf8TfF2cptTBSlNUGEVpf_1SM8LPO00tPo6OAKaSDePLu6_TC6IBWSZpVeIr1aTvDXrEwuFqPQ0w=w2400',
-    featured: ['#299', "#75", '#76', '#77', '#78', '#79', '#300', '#301', '#302', '#303', '#304', '#305'],
+    featured: ['#299', "#75", '#76', '#77', '#78', '#79', '#80', '#81', '#300', '#301', '#302', '#303', '#304', '#305', '#307'],
     videos: []
   },
   {
