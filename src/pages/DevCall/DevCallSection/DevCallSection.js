@@ -124,6 +124,13 @@ const devCallData = [
     notes: "https://notes.status.im/core-dev-call-28#",
     url: "https://www.youtube.com/watch?v=pvswK5dR1mc"
   },
+  {
+    key: 29,
+    title: "Status Core Dev Call #29 - May 4, 2020",
+    date: "2020-05-04",
+    notes: "https://notes.status.im/core-dev-call-29-notes",
+    url: "https://youtu.be/g4N_2AFVj9c"
+  },
 ];
 
 class DevCallSection extends Component {
