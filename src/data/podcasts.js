@@ -28,16 +28,6 @@ export const podcasts = [
     videos: []
   },
   {
-    category: 'status',
-    name: 'Status Korean Podcast',
-    creator: '스테이터스 한국',
-    link: 'https://feeds.soundcloud.com/users/soundcloud:users:772478986/sounds.rss',
-    img:
-      'https://lh3.googleusercontent.com/D5bCVgLCmW4s1CRTZsZaK5ad7sCHdMxo7VrVBbbPNgGIN8djhXunatFxwvsY5_RM_h4IroxbzroUlLbZDMNGXWN3TOo5Y6g18cS0Q2IN7r_4TSRrfxOpvtAzLSTDgrBeNCTEpAX32w=w2400',
-    featured: [],
-    videos: []
-  },
-  {
     category: 'featured',
     name: 'The Bitcoin Podcast',
     creator: 'Corey & Demetrick',
