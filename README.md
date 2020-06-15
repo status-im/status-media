@@ -21,7 +21,7 @@ Support RSS to play Status community podcasts
 1. Clone the repo
 
 ```sh
-git clone https://github.com/jinhojang6/status-podcast.git
+git clone https://github.com/status-im/status-media.git
 ```
 
 2. Install dependencies
