@@ -116,6 +116,13 @@ const townhallData = [
     date: "2020-05-25",
     slides: "https://our.status.im/town-hall-58-may-25th-2020/",
     url: "https://youtu.be/VAvayRLS6GY"
+  },
+  {
+    key: 17,
+    title: "Town Hall # 59 June 8, 2020",
+    date: "2020-06-08",
+    slides: "https://our.status.im/town-hall-59/",
+    url: "https://youtu.be/WhUneNWP4Do?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
   }
 ];
 
