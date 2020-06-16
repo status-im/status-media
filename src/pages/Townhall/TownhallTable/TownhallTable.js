@@ -56,7 +56,7 @@ const TownhallTable = ({ townhallData }) => {
     window.open(currentEvent.url, "_blank")
   };
 
-  return <Table dataSource={townhallData} columns={tableColumns} pagination={false} scroll={{ y: 400 }}/>;
+  return <Table dataSource={townhallData} columns={tableColumns} pagination={false}/>;
 };
 
 export { TownhallTable };
