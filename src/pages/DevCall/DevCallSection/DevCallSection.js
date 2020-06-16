@@ -144,6 +144,13 @@ const devCallData = [
     date: "2020-06-01",
     notes: "https://notes.status.im/core-dev-call_31#",
     url: "https://youtu.be/yEKMJ1cdfRg"
+  },
+  {
+    key: 32,
+    title: "Status Core Dev Call #32 - June 15, 2020",
+    date: "2020-06-15",
+    notes: "https://notes.status.im/core-dev-call_32#",
+    url: "https://youtu.be/EVUWyO7IzhM"
   }
 ];
 
