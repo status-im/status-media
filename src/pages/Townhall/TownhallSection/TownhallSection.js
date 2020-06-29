@@ -123,6 +123,13 @@ const townhallData = [
     date: "2020-06-08",
     slides: "https://our.status.im/town-hall-59/",
     url: "https://youtu.be/WhUneNWP4Do?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
+  },
+  {
+    key: 18,
+    title: "Town Hall # 60 June 22, 2020",
+    date: "2020-06-22",
+    slides: "https://our.status.im/town-hall-60/",
+    url: "https://youtu.be/-bcUQTfNMlk"
   }
 ];
 
