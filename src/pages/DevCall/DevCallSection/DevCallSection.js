@@ -166,6 +166,27 @@ const devCallData = [
     notes: "https://notes.status.im/core-dev-call_34",
     url: "https://youtu.be/j6pmv3-q9YQ"
   },
+  {
+    key: 35,
+    title: "Status Core Dev Call #35 - Sep 07, 2020",
+    date: "2020-09-07",
+    notes: "https://notes.status.im/core-dev-call_35",
+    url: "https://youtu.be/OFYyVP8SHyY"
+  },
+  {
+    key: 36,
+    title: "Status Core Dev Call #36 - Sep 21, 2020",
+    date: "2020-09-21",
+    notes: "https://notes.status.im/core-dev-call_36",
+    url: "https://youtu.be/iAcYfC65iFc"
+  },
+  {
+    key: 37,
+    title: "Status Core Dev Call #37 - Oct 5, 2020",
+    date: "2020-10-05",
+    notes: "https://notes.status.im/core-dev-call_37",
+    url: "https://youtu.be/YvfNn3_yS8o"
+  },
 ];
 
 class DevCallSection extends Component {
