@@ -168,17 +168,38 @@ const townhallData = [
   },
   {
     key: 24,
-    title: "Town Hall # 67 September 28, 2020",
+    title: "Town Hall # 66 September 28, 2020",
     date: "2020-09-28",
     slides: "https://our.status.im/town-hall-67/",
     url: "https://youtu.be/mzOyYtfXkb0"
   },
   {
     key: 25,
-    title: "Town Hall # 66 October 12, 2020",
+    title: "Town Hall # 67 October 12, 2020",
     date: "2020-10-12",
     slides: "https://our.status.im/town-hall-66/",
     url: "https://youtu.be/QQ4eN1fb2WY"
+  },
+  {
+    key: 26,
+    title: "Town Hall # 68 October 26, 2020",
+    date: "2020-10-26",
+    slides: "https://our.status.im/town-hall-68-october-26-2020/",
+    url: "https://youtu.be/7yG_GDT97QY?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
+  },
+  {
+    key: 27,
+    title: "Town Hall # 69 November 9, 2020",
+    date: "2020-11-09",
+    slides: "https://our.status.im/town-hall-69-november-9-2020/",
+    url: "https://youtu.be/7yG_GDT97QY?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
+  },
+  {
+    key: 28,
+    title: "Town Hall # 70 November 25, 2020",
+    date: "2020-11-25",
+    slides: "https://our.status.im/town-hall-70-november-23-2020/",
+    url: "https://youtu.be/OJB530tbMb4?list=PLbrz7IuP1hrgu-NlZEaxatGS5slTkhZ0N"
   },
 ];
 
